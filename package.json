@@ -2,8 +2,13 @@
   "name": "markdown-character-conversion",
   "displayName": "Markdown Full-width Character Converter",
   "description": "Convert full-width characters in Markdown to half-width characters automatically",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "icon": "images/icon.png",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/zhuwq585/markdown-character-conversion.git"
+    },
+   "publisher": "zhuwq585",
   "engines": {
       "vscode": "^1.63.0"
   },
@@ -35,7 +40,6 @@
                     { "jp": "　", "en": " " },
                     {"jp" : "＊","en":"*"},
                     {"jp" : "＿","en":"_"},
-                    {"jp" : "ー","en":"-"},
                     {"jp" : "＋","en":"+"},
                     {"jp" : "＜","en":"<"},
                     {"jp" : "＞","en":">"},

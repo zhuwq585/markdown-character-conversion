@@ -35,6 +35,10 @@ Users appreciate release notes as you update your extension.
 
 Initial release.
 
+### 0.0.2
+
+The "ー" character is used in Japanese so I delete this rule in the default setting.
+I plan to update the conversion strategy that only convert the characters in the markdown syntax-related part to prevent this issue.
 
 ---
 <!-- 
