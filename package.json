@@ -1,0 +1,83 @@
+{
+  "name": "markdown-jp-to-en",
+  "displayName": "Markdown JP to EN",
+  "description": "Convert full-width characters in Markdown to half-width characters",
+  "version": "0.0.1",
+  "icon": "images/icon.png",
+  "engines": {
+      "vscode": "^1.63.0"
+  },
+  "categories": [
+      "Other"
+  ],
+  "activationEvents": [
+      "onLanguage:markdown"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+      "commands": [
+          {
+              "command": "extension.convertJPToEN",
+              "title": "Convert Japanese characters to English characters"
+          }
+      ],
+      "configuration": {
+        "properties": {
+            "markdownJpToEn.enable": {
+                "type": "boolean",
+                "default": true,
+                "description": "Enable or disable the Markdown JP to EN extension"
+            },
+            "markdownJpToEn.replacements": {
+                "type": "array",
+                "default": [
+                    { "jp": "＃", "en": "#" },
+                    { "jp": "　", "en": " " },
+                    {"jp" : "＊","en":"*"},
+                    {"jp" : "＿","en":"_"},
+                    {"jp" : "ー","en":"-"},
+                    {"jp" : "＋","en":"+"},
+                    {"jp" : "＜","en":"<"},
+                    {"jp" : "＞","en":">"},
+                    {"jp" : "１","en":"1"},
+                    {"jp" : "２","en":"2"},
+                    {"jp" : "３","en":"3"},
+                    {"jp" : "４","en":"4"},
+                    {"jp" : "５","en":"5"},
+                    {"jp" : "６","en":"6"},
+                    {"jp" : "７","en":"7"},
+                    {"jp" : "８","en":"8"},
+                    {"jp" : "９","en":"9"},
+                    {"jp" : "０","en":"0"},
+                    {"jp" : "。","en":"."},
+                    {"jp" : "、","en":","}
+                ],
+                "description": "List of replacements from Japanese to English characters",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "jp": {
+                                "type": "string",
+                                "description": "Japanese character to replace"
+                            },
+                            "en": {
+                                "type": "string",
+                                "description": "English character to replace with"
+                            }
+                        }
+                    }
+            }
+        }
+      }
+  },
+  "scripts": {
+      "vscode:prepublish": "npm run compile",
+      "compile": "tsc -p ./"
+  },
+  "devDependencies": {
+      "typescript": "^4.5.4",
+      "vscode": "^1.1.37",
+      "@types/node": "^14.14.37",
+      "@types/vscode": "^1.63.0"
+  }
+}
