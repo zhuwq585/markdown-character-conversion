@@ -11,6 +11,10 @@ to reduce the switch of the input language.
 When the cursor moves to another line,
 the conversion will be applied to the previous line.
 
+<img src="images/demo.gif" alt="Demo" width="400"/>
+
+<!-- ![Demo](images/demo.gif) -->
+
 
 ## Extension Settings
 
