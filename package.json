@@ -1,7 +1,7 @@
 {
-  "name": "markdown-jp-to-en",
-  "displayName": "Markdown JP to EN",
-  "description": "Convert full-width characters in Markdown to half-width characters",
+  "name": "markdown-character-conversion",
+  "displayName": "Markdown Full-width Character Converter",
+  "description": "Convert full-width characters in Markdown to half-width characters automatically",
   "version": "0.0.1",
   "icon": "images/icon.png",
   "engines": {

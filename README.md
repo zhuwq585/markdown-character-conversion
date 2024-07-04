@@ -1,4 +1,4 @@
-# markdownjapanesecharacterconverter README
+# markdown-character-conversion README
 
 ## Features
 
